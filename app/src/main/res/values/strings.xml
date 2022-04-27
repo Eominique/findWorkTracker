@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">findWorkTracker</string>
+    <string name="message">Message</string>
 </resources>

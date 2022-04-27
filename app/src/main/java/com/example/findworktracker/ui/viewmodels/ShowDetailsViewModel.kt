@@ -1,0 +1,12 @@
+package com.example.findworktracker.ui.viewmodels
+
+import androidx.lifecycle.ViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
+
+@HiltViewModel
+class ShowDetailsViewModel @Inject constructor(
+
+): ViewModel() {
+
+}

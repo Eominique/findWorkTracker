@@ -5,26 +5,30 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.findworktracker.databinding.SplashFragmentBinding
+import androidx.fragment.app.viewModels
+import com.example.findworktracker.databinding.ListJobsFragmentBinding
+import com.example.findworktracker.ui.viewmodels.ListJobsViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
-class SplashFragment : Fragment() {
+@AndroidEntryPoint
+class ListJobsFragment: Fragment() {
 
-    private var _binding: SplashFragmentBinding? = null
-    val binding get() = _binding
+    private var _binding: ListJobsFragmentBinding? = null
+    private val binding get() = _binding!!
+
+    private val listJobsViewModel: ListJobsViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        _binding = SplashFragmentBinding.inflate(inflater)
-        return binding?.root
+    ): View {
+        _binding = ListJobsFragmentBinding.inflate(inflater)
+        return binding.root
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
 
     }
 
@@ -32,5 +36,4 @@ class SplashFragment : Fragment() {
         super.onDestroy()
         _binding = null
     }
-
 }
