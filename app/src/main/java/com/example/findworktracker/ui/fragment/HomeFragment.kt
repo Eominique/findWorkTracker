@@ -23,7 +23,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = HomeFragmentBinding.inflate(inflater)
+        _binding = HomeFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
 

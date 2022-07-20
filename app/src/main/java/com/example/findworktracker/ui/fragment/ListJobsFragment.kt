@@ -23,7 +23,7 @@ class ListJobsFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = ListJobsFragmentBinding.inflate(inflater)
+        _binding = ListJobsFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
 

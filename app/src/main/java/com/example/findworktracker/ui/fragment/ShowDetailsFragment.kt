@@ -22,7 +22,7 @@ class ShowDetailsFragment:  Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = ShowDetailsFragmentBinding.inflate(inflater)
+        _binding = ShowDetailsFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
 
